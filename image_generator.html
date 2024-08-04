@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Generator</title>
+    <title>D-LOGIC Image Generator 4K</title>
     <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.39.0/gradio.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        gradio-app {
+            width: 100%; /* Adjust width as needed */
+            max-width: 960px; /* Adjust maximum width as needed */
+        }
+    </style>
 </head>
 <body>
-    <h1>My Image Generator</h1>
-    <gradio-app src="https://rafaldembski-image-generator-4k.hf.space"></gradio-app>
+    <div>
+        <h1>D-LOGIC Image Generator 4K</h1>
+        <gradio-app src="https://rafaldembski-image-generator-4k.hf.space"></gradio-app>
+    </div>
 </body>
 </html>
+
