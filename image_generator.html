@@ -7,21 +7,21 @@
     <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.39.0/gradio.js"></script>
     <style>
         body, html {
-            height: 100%;
             margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            height: 100vh; /* This ensures the body takes full viewport height */
         }
         h1 {
             text-align: center;
-            width: 100%;
+            width: 100%; /* Full width to align text center */
         }
     </style>
 </head>
 <body>
-    <div style="width: 100%; max-width: 960px;">
+    <div>
         <h1>D-LOGIC Image Generator 4K</h1>
         <gradio-app src="https://rafaldembski-image-generator-4k.hf.space"></gradio-app>
     </div>
